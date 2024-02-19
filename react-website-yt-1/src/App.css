@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  align-items: center;
+  gap: 20px; /* Adjust the space between elements */
 }
 
 .App-logo {
@@ -35,4 +37,17 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.box {
+  width: 50px; /* Adjust the size as needed */
+  height: 50px; /* Adjust the size as needed */
+  border: 2px solid black; /* Box border */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow {
+  font-size: 24px; /* Adjust arrow size */
 }
