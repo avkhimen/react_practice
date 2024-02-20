@@ -10,3 +10,10 @@ services:
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql
     ports:
       - "5432:5432"
+
+  skill_prediction:
+    image: python:3.10
+    environment:
+      OPENAI_API_KEY: ${openai_api_key}
+    ports:
+      - "5800:5800"
