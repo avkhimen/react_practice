@@ -3,7 +3,7 @@ CREATE TABLE IF NOT EXISTS tbl1 (
   last_name TEXT,
   company TEXT,
   email TEXT,
-  skills ARRAY,
+  skills TEXT ARRAY,
   manager TEXT,
   hr_owner TEXT
 );

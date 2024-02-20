@@ -12,8 +12,12 @@ services:
       - "5432:5432"
 
   skill_prediction:
-    image: python:3.10
+    build:
+      context: .
+      dockerfile: ./skill_prediction/docker/Dockerfile
     environment:
       OPENAI_API_KEY: ${openai_api_key}
+    volumes:
+      - ./skill_prediction/app:/app
     ports:
       - "5800:5800"
